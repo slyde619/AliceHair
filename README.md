@@ -3,8 +3,7 @@
 A modern, responsive hair styling website showcasing various braiding techniques and hairstyle galleries.
 
 ## Features
-- Interactive hair braid gallery with 5+ natural styles
-- Downloadable high-quality hair images (350x350px)
+- Interactive hair braid gallery with 2+ natural styles
 - Responsive design for all devices
 - Smooth animations and hover effects
 - Clean, professional interface
