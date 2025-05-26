@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Nails - Beautiful Nails, Professional Care</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="./assets/images/logo.PNG" alt="Alice Hair Brand Logo">
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link" data-section="home">Home</a>
+          <a href="#services" class="nav-link" data-section="services"
+            >Services</a
+          >
+          <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+          <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Beautiful Hair,<br />
+            <span class="gradient-text">Professional Care</span>
+          </h1>
+          <p class="hero-subtitle">
+            Get stunning nails with our expert manicure services.
+          </p>
+          <button class="cta-button" onclick="scrollToSection('contact')">
+            <span>Book Now</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <img
+              src="./assets/images/hero-img.jpeg"
+              alt="Beautiful braided hair"
+              class="hero-img"
+            />
+            <div class="floating-card card-1">
+              <i class="fas fa-star"></i>
+              <span>5.0 Rating</span>
+            </div>
+            <div class="floating-card card-2">
+              <i class="fas fa-clock"></i>
+              <span>Quick Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Services</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="services-grid" id="services-grid">
+          <!-- Services will be rendered by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Gallery</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Gallery items will be rendered by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Bulk Distributor -->
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Become a distributor</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="services-grid" id="services-grid">
+          <article class="bulk-order">
+            <h3>place bulk order for hair extensions as low as <span>&#8358;2800</span></h3>
+            <a href="#" class="cta-button" onclick="scrollToSection('contact')">
+              <span>Order now</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Address</h4>
+                  <p>122 Main Street, Lagos, NG</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>3124-198-439-7882</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>info@elit-nails.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <h3>Send Message</h3>
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Elite Nails</h3>
+            <p>Beautiful nails, professional care</p>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <!-- Footer Date and rights! -->
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        const footerDate = new Date().getFullYear()
+        const footerContent = `<p>&copy; ${footerDate} Alice Hair. All rights reserved.</p>`
+        const footerBottom = document.querySelector('.footer-bottom')
+        footerBottom.innerHTML = footerContent
+    </script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
