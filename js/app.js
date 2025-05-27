@@ -2,19 +2,19 @@
 // Data Arrays
 const servicesData = [
     {
-        icon: 'fas fa-hand-sparkles',
-        title: 'Manicures',
-        description: 'Classic or better nail treatments for perfect nails.'
+        icon: 'fas fa-magic',
+        title: 'Styling',
+        description: 'From sleek to curly — get styled for any occasion.'
     },
     {
-        icon: 'fas fa-tint',
-        title: 'Gel Polish',
-        description: 'Long-lasting gel application in a variety of colors.'
+        icon: 'fas fa-air-freshener',
+        title: 'Extensions',
+        description: 'Premium human hair extensions for added length and volume.'
     },
     {
-        icon: 'fas fa-paint-brush',
-        title: 'Nail Art',
-        description: 'Custom nail art designs for a unique look.'
+        icon: 'fas fa-spa',
+        title: 'Treatments',
+        description: 'Revitalize your hair with nourishing care and deep treatments.'
     }
 ];
 
