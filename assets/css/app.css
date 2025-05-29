@@ -428,7 +428,7 @@ body {
   background: var(--light-gray);
 }
 
-.gallery-grid {
+.gallery-items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
@@ -460,6 +460,63 @@ body {
   transform: scale(1.1);
 }
 
+.gallery-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.category-tab {
+  background: var(--white);
+  border: 2px solid var(--light-gray);
+  color: var(--text-light);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-secondary);
+  text-transform: capitalize;
+  min-width: 100px;
+  justify-content: center;
+}
+
+.category-tab:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-light);
+}
+
+.category-tab.active {
+  background: var(--gradient-primary);
+  border-color: var(--accent-color);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.tab-count {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.2rem 0.5rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.category-tab:not(.active) .tab-count {
+  background: var(--light-gray);
+  color: var(--text-light);
+}
+
+
 .gallery-overlay {
   position: absolute;
   top: 0;
@@ -486,8 +543,6 @@ body {
   color: var(--white);
   font-size: 2rem;
 }
-
-/* View More Button Styles - Add this to your existing app.css */
 
 .view-more-container {
   grid-column: 1 / -1; /* Span across all columns */
@@ -542,7 +597,26 @@ body {
   transform: translateY(3px);
 }
 
-/* Notification styles - Add these if not already present */
+.gallery-item[data-category] {
+  animation: categoryFilter 0.5s ease-out forwards;
+}
+
+/* Loading State for Category Switching */
+.gallery-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.gallery-loading i {
+  margin-right: 0.5rem;
+  animation: spin 1s linear infinite;
+}
+
+/* Notification styles*/
 .notification {
   position: fixed;
   top: 20px;
@@ -814,6 +888,7 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
+
 /* Animations */
 @keyframes slideInLeft {
   from {
@@ -867,6 +942,24 @@ body {
     transform: translateY(0);
   }
 }
+
+@keyframes categoryFilter {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
