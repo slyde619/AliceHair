@@ -24,67 +24,67 @@ const galleryData = [
         id: 1,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-4_j4fgdt.jpg',
         alt: "A woman sitting in a tub with a pink shirt on",
-        category: 'model'
+        category: 'alicequeen'
     },
     {
         id: 2,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-2_zkjaak.jpg',
         alt: 'A woman with glasses sitting on a chair',
-        category: 'model'
+        category: 'alicequeen'
     },
     {
         id: 3,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-7_yjrpdo.jpg',
         alt: "A woman with long twists in her hair",
-        category: 'model'
+        category: 'alicequeen'
     },
     {
         id: 4,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-19_gxy0bm.jpg',
         alt: 'A woman in a pink top with a braid in her hair',
-        category: 'model'
+        category: 'alicequeen'
     },
     {
         id: 5,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504157/AliceHair/tinified/gallery-image-8_lkcu6k.jpg',
         alt: "A woman with pink braids holding a cell phone.",
-        category: 'model'
+        category: 'alicequeen'
     },
     {
         id: 6,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504158/AliceHair/tinified/gallery-image-10_nnctoj.jpg',
         alt: 'A little girl with long braids standing on a street',
-        category: 'model'
+        category: 'alicequeen'
     },
     {
         id: 7,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504158/AliceHair/tinified/gallery-image-1_snmo7s.jpg',
         alt: 'A woman with long braids is posing for a picture',
-        category: 'model'
+        category: 'alicequeen'
     },
     {
         id: 8,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504156/AliceHair/tinified/gallery-image-5_p5bpac.jpg',
         alt: 'a little girl sitting in a chair with a butterfly shirt on',
-        category: 'model'
+        category: 'alicequeen'
     },
     {
         id: 11,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504143/AliceHair/tinified/gallery-image-6_j8iszu.jpg',
         alt: 'a woman sitting in front of a poster',
-        category: 'model'
+        category: 'alicequeen'
     },
     {
         id: 13,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504150/AliceHair/tinified/gallery-image-3_wtogis.jpg',
         alt: 'a woman sitting in a tub with her hair in a pony tail',
-        category: 'model'
+        category: 'alicequeen'
     },
     {
         id: 14,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504143/AliceHair/tinified/gallery-image-9_amhefz.jpg',
         alt: 'a woman wearing glasses looking down at her cell phone',
-        category: 'model'
+        category: 'alicequeen'
     },
     
     // Product Images
@@ -135,6 +135,12 @@ const galleryData = [
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504117/AliceHair/tinified/gallery-image-15_etp23z.jpg',
         alt: 'Purple Alice super jumbo braiding hair extensions',
         category: 'product'
+    },
+    {
+        id: 20,
+        src: './assets/images/alice-model.webp',
+        alt: 'ALice hair brand model posing for photo',
+        category: 'model'
     }
 ];
 
@@ -230,7 +236,8 @@ function getCategoryCounts() {
     const counts = {
         all: galleryData.length,
         model: galleryData.filter(item => item.category === 'model').length,
-        product: galleryData.filter(item => item.category === 'product').length
+        product: galleryData.filter(item => item.category === 'product').length,
+        alicequeen: galleryData.filter(item => item.category === 'alicequeen').length
     };
     return counts;
 }
@@ -249,7 +256,10 @@ function renderGallery() {
                 Models <span class="tab-count">(${counts.model})</span>
             </button>
             <button class="category-tab ${activeCategory === 'product' ? 'active' : ''}" data-category="product">
-                Products <span class="tab-count">(${counts.product})</span>
+                 Products <span class="tab-count">(${counts.product})</span>
+            </button>
+            <button class="category-tab ${activeCategory === 'alicequeen' ? 'active' : ''}" data-category="alicequeen">
+                Alice Queens <span class="tab-count">(${counts.alicequeen})</span>
             </button>
         </div>
     `;
