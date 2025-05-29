@@ -1,4 +1,4 @@
-// Updated Data Arrays - Extended gallery with more images
+// Updated Data Arrays - Extended gallery with categories
 const servicesData = [
     {
         icon: 'fas fa-magic',
@@ -17,110 +17,133 @@ const servicesData = [
     }
 ];
 
-// Extended gallery data
+// Extended gallery data with categories
 const galleryData = [
+    // Model Images
     {
         id: 1,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-4_j4fgdt.jpg',
-        alt: "A woman sitting in a tub with a pink shirt on"
+        alt: "A woman sitting in a tub with a pink shirt on",
+        category: 'model'
     },
     {
         id: 2,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-2_zkjaak.jpg',
-        alt: 'A woman with glasses sitting on a chair'
+        alt: 'A woman with glasses sitting on a chair',
+        category: 'model'
     },
     {
         id: 3,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-7_yjrpdo.jpg',
-        alt: "A woman with long twists in her hair"
+        alt: "A woman with long twists in her hair",
+        category: 'model'
     },
     {
         id: 4,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-19_gxy0bm.jpg',
-        alt: 'A woman in a pink top with a braid in her hair'
+        alt: 'A woman in a pink top with a braid in her hair',
+        category: 'model'
     },
     {
         id: 5,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504157/AliceHair/tinified/gallery-image-8_lkcu6k.jpg',
-        alt: "A woman with pink braids holding a cell phone."
+        alt: "A woman with pink braids holding a cell phone.",
+        category: 'model'
     },
     {
         id: 6,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504158/AliceHair/tinified/gallery-image-10_nnctoj.jpg',
-        alt: 'A little girl with long braids standing on a street'
+        alt: 'A little girl with long braids standing on a street',
+        category: 'model'
     },
-    // Add more images here - these will be loaded on "View More"
     {
         id: 7,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504158/AliceHair/tinified/gallery-image-1_snmo7s.jpg',
-        alt: 'A woman with long braids is posing for a picture'
+        alt: 'A woman with long braids is posing for a picture',
+        category: 'model'
     },
     {
         id: 8,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504156/AliceHair/tinified/gallery-image-5_p5bpac.jpg',
-        alt: 'a little girl sitting in a chair with a butterfly shirt on'
-    },
-    {
-        id: 9,
-        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504164/AliceHair/tinified/gallery-image-16_ife5hj.jpg',
-        alt: 'A shade of burgundy Alice super jumbo braid hair extension'
-    },
-    {
-        id: 10,
-        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-11_neanes.jpg',
-        alt: 'A pile of alice super jumbo braid hair extension products sitting on top of a cardboard box'
+        alt: 'a little girl sitting in a chair with a butterfly shirt on',
+        category: 'model'
     },
     {
         id: 11,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504143/AliceHair/tinified/gallery-image-6_j8iszu.jpg',
-        alt: 'a woman sitting in front of a poster'
-    },
-    {
-        id: 12,
-        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504154/AliceHair/tinified/gallery-image-14_dfcuzy.jpg',
-        alt: 'A shade of red Alice super jumbo braid hair extension'
+        alt: 'a woman sitting in front of a poster',
+        category: 'model'
     },
     {
         id: 13,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504150/AliceHair/tinified/gallery-image-3_wtogis.jpg',
-        alt: 'a woman sitting in a tub with her hair in a pony tail'
+        alt: 'a woman sitting in a tub with her hair in a pony tail',
+        category: 'model'
     },
     {
         id: 14,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504143/AliceHair/tinified/gallery-image-9_amhefz.jpg',
-        alt: 'a woman wearing glasses looking down at her cell phone'
+        alt: 'a woman wearing glasses looking down at her cell phone',
+        category: 'model'
+    },
+    
+    // Product Images
+    {
+        id: 9,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504164/AliceHair/tinified/gallery-image-16_ife5hj.jpg',
+        alt: 'A shade of burgundy Alice super jumbo braid hair extension',
+        category: 'product'
+    },
+    {
+        id: 10,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-11_neanes.jpg',
+        alt: 'A pile of alice super jumbo braid hair extension products sitting on top of a cardboard box',
+        category: 'product'
+    },
+    {
+        id: 12,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504154/AliceHair/tinified/gallery-image-14_dfcuzy.jpg',
+        alt: 'A shade of red Alice super jumbo braid hair extension',
+        category: 'product'
     },
     {
         id: 15,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504121/AliceHair/tinified/gallery-image-12_hugcwm.jpg',
-        alt: 'a bunch of white alice jumbo braids are in a box'
+        alt: 'a bunch of white alice jumbo braids are in a box',
+        category: 'product'
     },
     {
         id: 16,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504117/AliceHair/tinified/gallery-image-18_matojj.jpg',
-        alt: ' a bunch of white hair sitting on top of a cardboard box'
+        alt: ' a bunch of white hair sitting on top of a cardboard box',
+        category: 'product'
     },
     {
         id: 17,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504117/AliceHair/tinified/gallery-image-13_iqfh2f.jpg',
-        alt: 'two packets of medium brown alice jumbo hair extension inside a brown carton'
+        alt: 'two packets of medium brown alice jumbo hair extension inside a brown carton',
+        category: 'product'
     },
     {
         id: 18,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504117/AliceHair/tinified/gallery-image-17_eiglv3.jpg',
-        alt: 'two packets of purple alice jumbo hair extension sitting on top of a cardboard box'
+        alt: 'two packets of purple alice jumbo hair extension sitting on top of a cardboard box',
+        category: 'product'
     },
     {
         id: 19,
         src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504117/AliceHair/tinified/gallery-image-15_etp23z.jpg',
-        alt: 'Purple Alice super jumbo braiding hair extensions'
+        alt: 'Purple Alice super jumbo braiding hair extensions',
+        category: 'product'
     }
 ];
 
 // Gallery pagination variables
 let currentGalleryPage = 0;
-const imagesPerPage = 6;
+let activeCategory = 'all';
+const imagesPerPage = 8;
 let displayedImages = [];
+let filteredData = [];
 
 // DOM Elements
 const navbar = document.getElementById('navbar');
@@ -155,18 +178,45 @@ function renderServices() {
     servicesGrid.innerHTML = servicesHTML;
 }
 
-// Initialize Gallery with pagination
+// Initialize Gallery with categories and pagination
 function initializeGallery() {
     displayedImages = [];
     currentGalleryPage = 0;
+    filterByCategory('all');
+}
+
+// Filter gallery by category
+function filterByCategory(category) {
+    activeCategory = category;
+    currentGalleryPage = 0;
+    displayedImages = [];
+    
+    if (category === 'all') {
+        filteredData = [...galleryData];
+    } else {
+        filteredData = galleryData.filter(item => item.category === category);
+    }
+    
     loadMoreImages();
+    updateCategoryTabs();
+}
+
+// Update active category tab
+function updateCategoryTabs() {
+    const tabs = document.querySelectorAll('.category-tab');
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.dataset.category === activeCategory) {
+            tab.classList.add('active');
+        }
+    });
 }
 
 // Load more images function
 function loadMoreImages() {
     const startIndex = currentGalleryPage * imagesPerPage;
     const endIndex = startIndex + imagesPerPage;
-    const newImages = galleryData.slice(startIndex, endIndex);
+    const newImages = filteredData.slice(startIndex, endIndex);
     
     if (newImages.length > 0) {
         displayedImages = [...displayedImages, ...newImages];
@@ -175,31 +225,69 @@ function loadMoreImages() {
     }
 }
 
-// Render Gallery with View More button
+// Get category counts for tab labels
+function getCategoryCounts() {
+    const counts = {
+        all: galleryData.length,
+        model: galleryData.filter(item => item.category === 'model').length,
+        product: galleryData.filter(item => item.category === 'product').length
+    };
+    return counts;
+}
+
+// Render Gallery with category tabs and View More button
 function renderGallery() {
+    const counts = getCategoryCounts();
+    
+    // Category tabs HTML
+    const tabsHTML = `
+        <div class="gallery-tabs">
+            <button class="category-tab ${activeCategory === 'all' ? 'active' : ''}" data-category="all">
+                All <span class="tab-count">(${counts.all})</span>
+            </button>
+            <button class="category-tab ${activeCategory === 'model' ? 'active' : ''}" data-category="model">
+                Models <span class="tab-count">(${counts.model})</span>
+            </button>
+            <button class="category-tab ${activeCategory === 'product' ? 'active' : ''}" data-category="product">
+                Products <span class="tab-count">(${counts.product})</span>
+            </button>
+        </div>
+    `;
+    
+    // Gallery items HTML
     const galleryHTML = displayedImages.map((item, index) => `
-        <div class="gallery-item" data-aos="fade-up" data-aos-delay="${(index % imagesPerPage) * 100}">
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="${(index % imagesPerPage) * 100}" data-category="${item.category}">
             <img src="${item.src}" alt="${item.alt}" loading="lazy">
             <div class="gallery-overlay">
                 <i class="fas fa-search-plus"></i>
+                <div class="gallery-category">${item.category}</div>
             </div>
         </div>
     `).join('');
     
     // Check if there are more images to load
-    const hasMoreImages = displayedImages.length < galleryData.length;
-    const remainingImages = galleryData.length - displayedImages.length;
+    const hasMoreImages = displayedImages.length < filteredData.length;
+    const remainingImages = filteredData.length - displayedImages.length;
     
     const viewMoreButton = hasMoreImages ? `
         <div class="view-more-container">
             <button class="view-more-btn" id="view-more-btn">
-                <span>View More (${remainingImages} remaining)</span>
+                <span>Load More ${activeCategory === 'all' ? '' : activeCategory.charAt(0).toUpperCase() + activeCategory.slice(1) + 's'} (${remainingImages} remaining)</span>
                 <i class="fas fa-chevron-down"></i>
             </button>
         </div>
     ` : '';
     
-    galleryGrid.innerHTML = galleryHTML + viewMoreButton;
+    galleryGrid.innerHTML = tabsHTML + '<div class="gallery-items-grid">' + galleryHTML + '</div>' + viewMoreButton;
+    
+    // Add event listeners to category tabs
+    const categoryTabs = document.querySelectorAll('.category-tab');
+    categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const category = tab.dataset.category;
+            filterByCategory(category);
+        });
+    });
     
     // Add event listener to the View More button
     if (hasMoreImages) {
@@ -221,7 +309,7 @@ function handleViewMore() {
     `;
     viewMoreBtn.disabled = true;
     
-    // Simulate loading delay for better UX (remove this in production if not needed)
+    // Simulate loading delay for better UX
     setTimeout(() => {
         loadMoreImages();
         
