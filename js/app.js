@@ -1,5 +1,4 @@
-
-// Data Arrays
+// Updated Data Arrays - Extended gallery with more images
 const servicesData = [
     {
         icon: 'fas fa-magic',
@@ -18,38 +17,110 @@ const servicesData = [
     }
 ];
 
+// Extended gallery data
 const galleryData = [
     {
         id: 1,
-        src: './assets/images/braid-1.png',
-        alt: 'A close-up photograph showing the back of a woman’s head with a neatly styled French braid. Her straight, brown hair is tied into a smooth, symmetrical braid that falls down her back. '
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-4_j4fgdt.jpg',
+        alt: "A woman sitting in a tub with a pink shirt on"
     },
     {
         id: 2,
-        src: './assets/images/braid-2.png',
-        alt: 'A side-profile photo of a Nigerian woman with dark skin and natural black hair styled in neat cornrows that lead into a single braid.'
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-2_zkjaak.jpg',
+        alt: 'A woman with glasses sitting on a chair'
     },
     {
         id: 3,
-        src: './assets/images/braid-1.png',
-        alt: 'A close-up photograph showing the back of a woman’s head with a neatly styled French braid. Her straight, brown hair is tied into a smooth, symmetrical braid that falls down her back.'
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-7_yjrpdo.jpg',
+        alt: "A woman with long twists in her hair"
     },
     {
         id: 4,
-        src: './assets/images/braid-2.png',
-        alt: 'A side-profile photo of a Nigerian woman with dark skin and natural black hair styled in neat cornrows that lead into a single braid.'
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-19_gxy0bm.jpg',
+        alt: 'A woman in a pink top with a braid in her hair'
     },
     {
         id: 5,
-        src: './assets/images/braid-1.png',
-        alt: 'A close-up photograph showing the back of a woman’s head with a neatly styled French braid. Her straight, brown hair is tied into a smooth, symmetrical braid that falls down her back.'
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504157/AliceHair/tinified/gallery-image-8_lkcu6k.jpg',
+        alt: "A woman with pink braids holding a cell phone."
     },
     {
         id: 6,
-        src: './assets/images/braid-2.png',
-        alt: 'A side-profile photo of a Nigerian woman with dark skin and natural black hair styled in neat cornrows that lead into a single braid.'
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504158/AliceHair/tinified/gallery-image-10_nnctoj.jpg',
+        alt: 'A little girl with long braids standing on a street'
+    },
+    // Add more images here - these will be loaded on "View More"
+    {
+        id: 7,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504158/AliceHair/tinified/gallery-image-1_snmo7s.jpg',
+        alt: 'A woman with long braids is posing for a picture'
+    },
+    {
+        id: 8,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504156/AliceHair/tinified/gallery-image-5_p5bpac.jpg',
+        alt: 'a little girl sitting in a chair with a butterfly shirt on'
+    },
+    {
+        id: 9,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504164/AliceHair/tinified/gallery-image-16_ife5hj.jpg',
+        alt: 'A shade of burgundy Alice super jumbo braid hair extension'
+    },
+    {
+        id: 10,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504168/AliceHair/tinified/gallery-image-11_neanes.jpg',
+        alt: 'A pile of alice super jumbo braid hair extension products sitting on top of a cardboard box'
+    },
+    {
+        id: 11,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504143/AliceHair/tinified/gallery-image-6_j8iszu.jpg',
+        alt: 'a woman sitting in front of a poster'
+    },
+    {
+        id: 12,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504154/AliceHair/tinified/gallery-image-14_dfcuzy.jpg',
+        alt: 'A shade of red Alice super jumbo braid hair extension'
+    },
+    {
+        id: 13,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504150/AliceHair/tinified/gallery-image-3_wtogis.jpg',
+        alt: 'a woman sitting in a tub with her hair in a pony tail'
+    },
+    {
+        id: 14,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504143/AliceHair/tinified/gallery-image-9_amhefz.jpg',
+        alt: 'a woman wearing glasses looking down at her cell phone'
+    },
+    {
+        id: 15,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504121/AliceHair/tinified/gallery-image-12_hugcwm.jpg',
+        alt: 'a bunch of white alice jumbo braids are in a box'
+    },
+    {
+        id: 16,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504117/AliceHair/tinified/gallery-image-18_matojj.jpg',
+        alt: ' a bunch of white hair sitting on top of a cardboard box'
+    },
+    {
+        id: 17,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504117/AliceHair/tinified/gallery-image-13_iqfh2f.jpg',
+        alt: 'two packets of medium brown alice jumbo hair extension inside a brown carton'
+    },
+    {
+        id: 18,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504117/AliceHair/tinified/gallery-image-17_eiglv3.jpg',
+        alt: 'two packets of purple alice jumbo hair extension sitting on top of a cardboard box'
+    },
+    {
+        id: 19,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1748504117/AliceHair/tinified/gallery-image-15_etp23z.jpg',
+        alt: 'Purple Alice super jumbo braiding hair extensions'
     }
 ];
+
+// Gallery pagination variables
+let currentGalleryPage = 0;
+const imagesPerPage = 6;
+let displayedImages = [];
 
 // DOM Elements
 const navbar = document.getElementById('navbar');
@@ -63,13 +134,13 @@ const contactForm = document.getElementById('contact-form');
 // Initialize App
 document.addEventListener('DOMContentLoaded', function() {
     renderServices();
-    renderGallery();
+    initializeGallery();
     setupEventListeners();
     setupScrollEffects();
     setupIntersectionObserver();
 });
 
-// Render Services
+// Render Services (unchanged)
 function renderServices() {
     const servicesHTML = servicesData.map(service => `
         <div class="service-card" data-aos="fade-up">
@@ -84,10 +155,30 @@ function renderServices() {
     servicesGrid.innerHTML = servicesHTML;
 }
 
-// Render Gallery
+// Initialize Gallery with pagination
+function initializeGallery() {
+    displayedImages = [];
+    currentGalleryPage = 0;
+    loadMoreImages();
+}
+
+// Load more images function
+function loadMoreImages() {
+    const startIndex = currentGalleryPage * imagesPerPage;
+    const endIndex = startIndex + imagesPerPage;
+    const newImages = galleryData.slice(startIndex, endIndex);
+    
+    if (newImages.length > 0) {
+        displayedImages = [...displayedImages, ...newImages];
+        renderGallery();
+        currentGalleryPage++;
+    }
+}
+
+// Render Gallery with View More button
 function renderGallery() {
-    const galleryHTML = galleryData.map(item => `
-        <div class="gallery-item" data-aos="fade-up" data-aos-delay="${item.id * 100}">
+    const galleryHTML = displayedImages.map((item, index) => `
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="${(index % imagesPerPage) * 100}">
             <img src="${item.src}" alt="${item.alt}" loading="lazy">
             <div class="gallery-overlay">
                 <i class="fas fa-search-plus"></i>
@@ -95,10 +186,88 @@ function renderGallery() {
         </div>
     `).join('');
     
-    galleryGrid.innerHTML = galleryHTML;
+    // Check if there are more images to load
+    const hasMoreImages = displayedImages.length < galleryData.length;
+    const remainingImages = galleryData.length - displayedImages.length;
+    
+    const viewMoreButton = hasMoreImages ? `
+        <div class="view-more-container">
+            <button class="view-more-btn" id="view-more-btn">
+                <span>View More (${remainingImages} remaining)</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    ` : '';
+    
+    galleryGrid.innerHTML = galleryHTML + viewMoreButton;
+    
+    // Add event listener to the View More button
+    if (hasMoreImages) {
+        const viewMoreBtn = document.getElementById('view-more-btn');
+        viewMoreBtn.addEventListener('click', handleViewMore);
+    }
+    
+    // Re-observe new gallery items for animations
+    observeGalleryItems();
 }
 
-// Setup Event
+// Handle View More button click
+function handleViewMore() {
+    const viewMoreBtn = document.getElementById('view-more-btn');
+    
+    // Show loading state
+    viewMoreBtn.innerHTML = `
+        <span><i class="fas fa-spinner fa-spin"></i> Loading...</span>
+    `;
+    viewMoreBtn.disabled = true;
+    
+    // Simulate loading delay for better UX (remove this in production if not needed)
+    setTimeout(() => {
+        loadMoreImages();
+        
+        // Scroll to the newly loaded images
+        const newImages = document.querySelectorAll('.gallery-item');
+        const targetImage = newImages[displayedImages.length - imagesPerPage];
+        if (targetImage) {
+            targetImage.scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'center' 
+            });
+        }
+    }, 500);
+}
+
+// Observe gallery items for animations
+function observeGalleryItems() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const galleryObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease-out forwards';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, index * 100);
+            }
+        });
+    }, observerOptions);
+
+    // Observe only the newly added gallery items
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const startObserving = Math.max(0, galleryItems.length - imagesPerPage);
+    
+    for (let i = startObserving; i < galleryItems.length; i++) {
+        const item = galleryItems[i];
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+        galleryObserver.observe(item);
+    }
+}
+
 // Setup Event Listeners
 function setupEventListeners() {
     // Mobile menu toggle
@@ -198,7 +367,7 @@ function setupIntersectionObserver() {
             if (entry.isIntersecting) {
                 entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
                 entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.transform = 'translateY(0)';
                 
                 // Update active nav link based on visible section
                 updateActiveNavigation(entry.target.id);
@@ -214,9 +383,9 @@ function setupIntersectionObserver() {
         observer.observe(section);
     });
 
-    // Observe cards with stagger effect
-    const cards = document.querySelectorAll('.service-card, .gallery-item');
-    cards.forEach((card, index) => {
+    // Observe service cards with stagger effect
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach((card, index) => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(30px)';
         
