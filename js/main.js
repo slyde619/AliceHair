@@ -139,8 +139,26 @@ const galleryData = [
     {
         id: 20,
         src: './assets/images/alice-model.webp',
-        alt: 'ALice hair brand model posing for photo',
+        alt: 'Alice hair brand model posing for photo',
         category: 'model'
+    },
+    {
+        id: 21,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1751192578/AliceHair/tinified/alice-braid_deg2pv.jpg',
+        alt: 'A pack of five different types of braid',
+        category: 'product'
+    },
+    {
+        id: 22,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1751192593/AliceHair/tinified/alice-braid-2_ime5bx.jpg',
+        alt: 'A package of different colored hair sitting on top of a white wall',
+        category: 'product'
+    },
+    {
+        id: 23,
+        src: 'https://res.cloudinary.com/slydegee/image/upload/v1751192598/AliceHair/tinified/alice-braid-3_ej2bvt.jpg',
+        alt: 'A package of six different types of braids',
+        category: 'product'
     }
 ];
 
